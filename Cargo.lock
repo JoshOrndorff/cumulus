@@ -1774,6 +1774,7 @@ dependencies = [
  "async-trait",
  "cumulus-primitives-core",
  "cumulus-test-relay-sproof-builder",
+ "hex-literal 0.3.3",
  "parity-scale-codec",
  "polkadot-client",
  "sc-client-api",
