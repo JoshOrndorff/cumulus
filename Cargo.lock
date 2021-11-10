@@ -1644,8 +1644,8 @@ dependencies = [
 name = "cumulus-pallet-parachain-system"
 version = "0.1.0"
 dependencies = [
- "cumulus-pallet-parachain-system-proc-macro",
- "cumulus-primitives-core 0.1.0",
+ "cumulus-pallet-parachain-system-proc-macro 0.1.0 (git+https://github.com/purestake/cumulus?branch=moonbeam-polkadot-v0.9.11)",
+ "cumulus-primitives-core 0.1.0 (git+https://github.com/purestake/cumulus?branch=moonbeam-polkadot-v0.9.11)",
  "cumulus-primitives-parachain-inherent",
  "cumulus-test-client",
  "cumulus-test-relay-sproof-builder 0.1.0",
@@ -1678,6 +1678,17 @@ dependencies = [
 [[package]]
 name = "cumulus-pallet-parachain-system-proc-macro"
 version = "0.1.0"
+dependencies = [
+ "proc-macro-crate 1.1.0",
+ "proc-macro2",
+ "quote",
+ "syn",
+]
+
+[[package]]
+name = "cumulus-pallet-parachain-system-proc-macro"
+version = "0.1.0"
+source = "git+https://github.com/purestake/cumulus?branch=moonbeam-polkadot-v0.9.11#e0ef78f83dd9d1167d6fc520598f53cdcac5a1e1"
 dependencies = [
  "proc-macro-crate 1.1.0",
  "proc-macro2",
